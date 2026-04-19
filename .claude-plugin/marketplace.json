@@ -13,6 +13,14 @@
       "category": "development",
       "source": "./plugins/frontend",
       "homepage": "https://github.com/ginameee/tkhrn-claude-plugin"
+    },
+    {
+      "name": "devlog",
+      "description": "Claude Code 대화를 Astro 블로그(vibe-devlog)로 정리·발행. 내부 MCP가 AWS Lambda + GitHub PR + GitHub Actions 파이프라인을 경유 (사전 setup 필요)",
+      "version": "0.1.0",
+      "category": "productivity",
+      "source": "./plugins/devlog",
+      "homepage": "https://github.com/ginameee/tkhrn-claude-plugin/tree/main/plugins/devlog"
     }
   ]
 }
