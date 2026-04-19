@@ -6,6 +6,7 @@ React/FE 개발을 위한 통합 플러그인. **변경하기 쉬운 코드**를
 
 | 스킬 | 트리거 | 용도 |
 |---|---|---|
+| `frontend-init` | 수동 | 신규 프로젝트 부트스트랩 — 대화형 스택 결정 + 구조·보일러플레이트 생성 (Next.js App Router / Vite+React) |
 | `frontend-rules` | 자동 (React 컴포넌트 작성·리뷰 시) | 에러/로딩/데이터패칭/디렉터리 핵심 규칙 |
 | `frontend-design` | 수동 (`/frontend-design`) | 5-phase 대화형 설계 (요구사항 → 컴포넌트 트리 → 데이터 흐름 → 4축 검토 → 산출물) |
 | `frontend-review` | 수동 (`/frontend-review`) | 4축 + 구조 + 에러/로딩 + 데이터패칭 종합 코드 리뷰 |
