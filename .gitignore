@@ -1,0 +1,13 @@
+# Claude Code — local-only settings (permissions, env overrides)
+.claude/settings.local.json
+
+# macOS
+.DS_Store
+
+# Editors
+.idea/
+.vscode/
+*.swp
+
+# Logs / temp
+*.log

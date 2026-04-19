@@ -1,0 +1,18 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "tkhrn-plugins",
+  "description": "ginameee's Claude Code plugin collection — frontend development rules, design interactions, and tooling",
+  "owner": {
+    "name": "ginameee"
+  },
+  "plugins": [
+    {
+      "name": "frontend",
+      "description": "React/FE 4축 기반 개발 규칙·설계 인터랙션·코드 리뷰·접근성/성능 + Playwright MCP",
+      "version": "0.1.0",
+      "category": "development",
+      "source": "./plugins/frontend",
+      "homepage": "https://github.com/ginameee/tkhrn-claude-plugin"
+    }
+  ]
+}
