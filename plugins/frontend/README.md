@@ -13,6 +13,7 @@ React/FE 개발을 위한 통합 플러그인. **변경하기 쉬운 코드**를
 | `frontend-a11y-perf` | 수동 | WCAG 2.1 AA 접근성 + 성능 요약 + 반응형 검토 |
 | `frontend-vitals` | 수동 | Core Web Vitals 심화 — LCP/INP/CLS 각 지표별 측정·원인·개선·디버깅 워크플로우 (파일 단위 분리) |
 | `frontend-seo` | 수동 | 메타·OG·JSON-LD·URL 구조·네비게이션(`<a>` vs `router.push`)·렌더링 전략·사이트맵 (Next.js App Router 중심) |
+| `frontend-e2e` | 수동 | Playwright E2E 환경 세팅 + 테스트 케이스 작성 — MCP로 시나리오 탐색 → 작성 → 실행 → 실패 시 테스트 케이스 개선(앱 코드 수정 X) |
 
 ## 포함된 MCP
 

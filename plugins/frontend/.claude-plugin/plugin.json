@@ -1,6 +1,6 @@
 {
   "name": "frontend",
-  "description": "React/FE 4축(가독성·예측가능성·응집도·결합도) 기반 개발 규칙·설계 인터랙션·코드 리뷰·접근성/성능 + Playwright MCP",
+  "description": "React/FE 4축(가독성·예측가능성·응집도·결합도) 기반 개발 규칙·설계 인터랙션·코드 리뷰·접근성/성능 + Playwright E2E + MCP",
   "version": "0.1.0",
   "author": {
     "name": "ginameee"
@@ -13,6 +13,8 @@
     "code-review",
     "accessibility",
     "performance",
-    "playwright"
+    "playwright",
+    "e2e",
+    "testing"
   ]
 }

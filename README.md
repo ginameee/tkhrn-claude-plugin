@@ -6,7 +6,7 @@ ginameee 의 Claude Code 플러그인 마켓플레이스.
 
 | 플러그인 | 설명 |
 |---|---|
-| [`frontend`](plugins/frontend) | React/FE 4축 기반 개발 규칙·설계 인터랙션·코드 리뷰·접근성/성능 + SEO + Core Web Vitals + Playwright MCP |
+| [`frontend`](plugins/frontend) | React/FE 4축 기반 개발 규칙·설계 인터랙션·코드 리뷰·접근성/성능 + SEO + Core Web Vitals + Playwright E2E + MCP |
 | [`devlog`](plugins/devlog) | Claude Code 대화를 Astro 블로그(vibe-devlog)로 정리·발행 — 내부 MCP + Lambda + GitHub PR 파이프라인 (사전 setup 필요) |
 
 ## 설치
@@ -58,7 +58,8 @@ tkhrn-claude-plugin/
     │       ├── frontend-review/
     │       ├── frontend-a11y-perf/
     │       ├── frontend-seo/
-    │       └── frontend-vitals/
+    │       ├── frontend-vitals/
+    │       └── frontend-e2e/
     └── devlog/                    # devlog 플러그인
         ├── .claude-plugin/plugin.json
         ├── .mcp.json              # @ginameee/tkhrn-devlog-mcp
