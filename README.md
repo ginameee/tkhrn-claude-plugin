@@ -29,7 +29,7 @@ ginameee 의 Claude Code 플러그인 마켓플레이스.
 ### devlog 플러그인 추가 설정 (1회)
 
 ```bash
-npx @ginameee/tkhrn-devlog-mcp setup
+npx tkhrn-devlog-mcp setup
 ```
 
 OS keychain 에 `BLOG_LAMBDA_URL` / `LAMBDA_API_KEY` 를 암호화 저장. 자세한 내용은 [plugins/devlog/README.md](plugins/devlog/README.md).
@@ -62,7 +62,7 @@ tkhrn-claude-plugin/
     │       └── frontend-e2e/
     └── devlog/                    # devlog 플러그인
         ├── .claude-plugin/plugin.json
-        ├── .mcp.json              # @ginameee/tkhrn-devlog-mcp
+        ├── .mcp.json              # tkhrn-devlog-mcp
         └── skills/
             └── devlog-post/
 ```

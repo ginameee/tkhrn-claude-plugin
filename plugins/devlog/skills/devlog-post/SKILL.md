@@ -5,21 +5,21 @@ description: Claude Code 대화(또는 그 일부)를 Astro 블로그(vibe-devlo
 
 # DevLog Post
 
-Claude Code에서 나눈 대화를 블로그 포스트로 정제해 `@ginameee/tkhrn-devlog-mcp` MCP를 통해 게시한다. **수동 호출 전용** — 자동 트리거 없음.
+Claude Code에서 나눈 대화를 블로그 포스트로 정제해 `tkhrn-devlog-mcp` MCP를 통해 게시한다. **수동 호출 전용** — 자동 트리거 없음.
 
 ## 전제 조건
 
 **첫 실행 전 반드시 1회 수행** (그렇지 않으면 MCP tool 호출이 credential 에러로 실패):
 
 ```bash
-npx @ginameee/tkhrn-devlog-mcp setup
+npx tkhrn-devlog-mcp setup
 ```
 
 - 대화형으로 `BLOG_LAMBDA_URL` / `LAMBDA_API_KEY` 입력
 - OS keychain에 저장 (macOS Keychain / Windows Credential Manager / Linux libsecret)
 - 이후 Claude Code가 MCP를 spawn 할 때마다 자동 해석
 
-설정 변경: `npx @ginameee/tkhrn-devlog-mcp setup --reset`
+설정 변경: `npx tkhrn-devlog-mcp setup --reset`
 
 ## 사용 시점
 
@@ -194,7 +194,7 @@ await mcp.call('process_blog_content', {
 
 | 에러 | 원인 추정 | 사용자 안내 |
 |---|---|---|
-| `credential not found` | setup 미실행 | "`npx @ginameee/tkhrn-devlog-mcp setup` 먼저 실행해주세요" |
+| `credential not found` | setup 미실행 | "`npx tkhrn-devlog-mcp setup` 먼저 실행해주세요" |
 | `401 / 403 from Lambda` | API key 불일치·만료 | "keychain 의 API 키가 Lambda와 일치하는지 확인. 필요하면 `setup --reset`" |
 | 네트워크 에러 | Lambda URL 오타·장애 | "URL 재확인 또는 AWS 콘솔에서 Lambda 상태 확인" |
 | `PR already exists` | 같은 브랜치명 충돌 (드뭄) | "잠시 후 재시도 또는 기존 PR 먼저 정리" |

@@ -11,7 +11,7 @@ devlog-post 스킬
     ↓  범위 선정 → 초안 작성 → 🚨 민감정보 스크러빙 → 메타데이터 제안 → 사용자 확인
 MCP tool: process_blog_content
     ↓
-@ginameee/tkhrn-devlog-mcp (로컬 npx)
+tkhrn-devlog-mcp (로컬 npx)
     ↓  (credentials from OS keychain)
 AWS Lambda (blog-lambda)
     ↓
@@ -25,7 +25,7 @@ GitHub Actions → S3 배포
 | 항목 | 내용 |
 |---|---|
 | **Skill** | `devlog-post` — 수동 호출 (`/devlog-post`) + 대화형 ("블로그에 올려줘") |
-| **MCP** | `devlog` — `@ginameee/tkhrn-devlog-mcp` npx 실행 |
+| **MCP** | `devlog` — `tkhrn-devlog-mcp` npx 실행 |
 | **Credentials** | OS keychain (setup 1회), env var fallback 지원 |
 
 ## 설치 (사용자 관점)
@@ -42,7 +42,7 @@ GitHub Actions → S3 배포
 
 ### 3. MCP credentials 설정 (최초 1회)
 ```bash
-npx @ginameee/tkhrn-devlog-mcp setup
+npx tkhrn-devlog-mcp setup
 ```
 
 대화형으로 두 값 입력:
@@ -92,14 +92,14 @@ MCP가 활성화되고 `process_blog_content` tool 사용 가능.
 ### 회전·리셋
 ```bash
 # 키 변경 / 다른 Lambda 전환
-npx @ginameee/tkhrn-devlog-mcp setup --reset
+npx tkhrn-devlog-mcp setup --reset
 ```
 
 ## 문제 해결
 
 | 증상 | 원인 | 조치 |
 |---|---|---|
-| `credential not found` | setup 미실행 | `npx @ginameee/tkhrn-devlog-mcp setup` |
+| `credential not found` | setup 미실행 | `npx tkhrn-devlog-mcp setup` |
 | `401 / 403` | API key 불일치 | `setup --reset` 후 재입력 |
 | `Lambda timeout` | 콜드 스타트 또는 장애 | 재시도, CloudWatch 확인 |
 | `PR already exists` | 브랜치명 충돌 (드뭄) | 잠시 후 재시도 또는 기존 PR 정리 |
@@ -113,7 +113,7 @@ npx @ginameee/tkhrn-devlog-mcp setup --reset
 
 ## 개발·배포 상태
 
-- **MCP 패키지**: `@ginameee/tkhrn-devlog-mcp` — 별도 레포 `tkhrn-devlog-mcp` 에서 관리·publish
+- **MCP 패키지**: [`tkhrn-devlog-mcp`](https://www.npmjs.com/package/tkhrn-devlog-mcp) — 별도 레포 `tkhrn-devlog-mcp` 에서 관리·publish
 - **Lambda**: `vibe-devlog` 레포의 `lambda/` 디렉토리
 - **블로그**: [jangchunlee/vibe-devlog](https://github.com/jangchunlee/vibe-devlog) (Astro, S3 정적 호스팅)
 

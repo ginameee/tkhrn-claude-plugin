@@ -2,7 +2,7 @@
   "mcpServers": {
     "devlog": {
       "command": "npx",
-      "args": ["-y", "@ginameee/tkhrn-devlog-mcp@latest"]
+      "args": ["-y", "tkhrn-devlog-mcp@latest"]
     }
   }
 }
