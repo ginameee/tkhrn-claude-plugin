@@ -1,0 +1,17 @@
+{
+  "name": "handoff",
+  "description": "PreCompact 시점에 현재 대화를 ~/.claude/handoffs/ 에 markdown으로 자동 저장. 토큰 임계 자동 컴팩션과 /compact 수동 호출 모두 적용. 다른 에이전트로의 작업 인계 또는 기록 보존 용도.",
+  "version": "0.1.0",
+  "author": {
+    "name": "ginameee"
+  },
+  "homepage": "https://github.com/ginameee/tkhrn-claude-plugin/tree/main/plugins/handoff",
+  "keywords": [
+    "handoff",
+    "compact",
+    "context",
+    "memory",
+    "agent-handoff",
+    "transcript"
+  ]
+}
