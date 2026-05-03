@@ -29,6 +29,14 @@
       "category": "productivity",
       "source": "./plugins/handoff",
       "homepage": "https://github.com/ginameee/tkhrn-claude-plugin/tree/main/plugins/handoff"
+    },
+    {
+      "name": "noti",
+      "description": "Claude Code 동작에 대한 가벼운 알림 훅 모음. 현재는 Skill 호출 직전에 어떤 skill이 어떤 args로 실행되는지 systemMessage로 알림. 향후 다른 noti 류 훅 추가 가능한 네임스페이스.",
+      "version": "0.1.0",
+      "category": "productivity",
+      "source": "./plugins/noti",
+      "homepage": "https://github.com/ginameee/tkhrn-claude-plugin/tree/main/plugins/noti"
     }
   ]
 }
