@@ -21,6 +21,22 @@
       "category": "productivity",
       "source": "./plugins/devlog",
       "homepage": "https://github.com/ginameee/tkhrn-claude-plugin/tree/main/plugins/devlog"
+    },
+    {
+      "name": "handoff",
+      "description": "PreCompact 시점에 현재 대화를 ~/.claude/handoffs/ 에 markdown으로 자동 저장. 토큰 임계 자동 컴팩션과 /compact 수동 호출 모두 적용. 다른 에이전트로의 작업 인계 또는 기록 보존 용도.",
+      "version": "0.1.0",
+      "category": "productivity",
+      "source": "./plugins/handoff",
+      "homepage": "https://github.com/ginameee/tkhrn-claude-plugin/tree/main/plugins/handoff"
+    },
+    {
+      "name": "noti",
+      "description": "Claude Code 동작에 대한 가벼운 알림 훅 모음. 현재는 Skill 호출 직전에 어떤 skill이 어떤 args로 실행되는지 systemMessage로 알림. 향후 다른 noti 류 훅 추가 가능한 네임스페이스.",
+      "version": "0.1.0",
+      "category": "productivity",
+      "source": "./plugins/noti",
+      "homepage": "https://github.com/ginameee/tkhrn-claude-plugin/tree/main/plugins/noti"
     }
   ]
 }
